@@ -25,16 +25,12 @@
 .c-youtubeBox{
 	width: 100%;
 	height: auto;
-	padding: 10px;
+	// padding: 10px;
 	margin: auto;
 	aspect-ratio: 16 / 9;
 	border: 1px solid $main-color--b;
 	box-shadow: 1px 1px 5px #8d8d8d;
-	@include min(768){
-		width: 65%;
-		padding: 10px;
 
-	}
 	.c-youtubeBox-inner{
 		height: -webkit-fill-available;
 		margin: auto;

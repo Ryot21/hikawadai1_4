@@ -320,7 +320,42 @@
 				}
 				a{display: block;}
 			}
-			
+
+			// 動画関係
+			&.-movie{
+				width: 90%;
+				@include min(768){
+					width: 40%;
+				}
+			}
+			&.-movie01{
+				top: 23.75%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				@include min(768){
+					top: 30%;
+					left: 20%;
+				}
+			}
+			&.-movie02{
+				top: 53.75%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				@include min(768){
+					top: 57.3%;
+					left: 69.5%;
+					transform: translate(-24%, -50%);
+				}
+			}
+			&.-movie03{
+				top: 85.75%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				@include min(768){
+					top: 88.5%;
+					left: 20%;
+				}
+			}
 		}
 	}
 }

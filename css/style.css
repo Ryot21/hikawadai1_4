@@ -4416,6 +4416,48 @@ button.swiper-pagination-bullet {
 .c-contents.-imgBg .c-contentsBox.-setsubiBtn a {
   display: block;
 }
+.c-contents.-imgBg .c-contentsBox.-movie {
+  width: 90%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-movie {
+    width: 40%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-movie01 {
+  top: 23.75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-movie01 {
+    top: 30%;
+    left: 20%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-movie02 {
+  top: 53.75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-movie02 {
+    top: 57.3%;
+    left: 69.5%;
+    transform: translate(-24%, -50%);
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-movie03 {
+  top: 85.75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-movie03 {
+    top: 88.5%;
+    left: 20%;
+  }
+}
 
 .c-contents_title {
   position: relative;
@@ -6195,17 +6237,10 @@ a {
 .c-youtubeBox {
   width: 100%;
   height: auto;
-  padding: 10px;
   margin: auto;
   aspect-ratio: 16/9;
   border: 1px solid #3b3b3b;
   box-shadow: 1px 1px 5px #8d8d8d;
-}
-@media (width >= 768px) {
-  .c-youtubeBox {
-    width: 65%;
-    padding: 10px;
-  }
 }
 .c-youtubeBox .c-youtubeBox-inner {
   height: -webkit-fill-available;
