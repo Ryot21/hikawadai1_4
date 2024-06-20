@@ -1,0 +1,310 @@
+// コンテンツ
+.c-container{
+	width: 100vw;
+	height: auto;
+}
+
+.c-contents{
+	&-inner{
+		width: 90%;
+		margin: auto;
+		@include min(768){
+			width: 95%;
+		}
+	}
+
+	&.-h-logo{
+		position: relative;
+		.c-contentsBox{
+			position: absolute;
+			// ヘッダーロゴ
+			&.-logo{
+				&-item01{//緑色の鳥
+					top: 51%;
+					left: 101.5%;
+					width: 6.5%;
+					@include min(768){
+						top: 17.5%;
+						left: 30.8%;
+						width: 2.3%;
+					}
+				}
+				&-item02{//黄色の鳥
+					top: 32%;
+					left: 110%;
+					width: 5%;
+					@include min(768){
+						top: 10%;
+						left: 33%;
+						width: 1.5%;
+					}
+				}
+			}
+			// SOLD OUT
+			&.-soldOut{
+				top: 36%;
+				left: 45%;
+				transform: rotate(-5deg) translate(-50%, -50%);
+				width: 70%;
+				z-index: 99;
+				filter: drop-shadow(1px 1px 2px rgb(128, 128, 128));
+				img{background: $sold-out;}
+				@include min(768){
+					top: 41%;
+					left: 63%;
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	&.-f-slider,//スライダー
+	&.-f-view{  //ファーストビュー
+		width: 100%;
+		height: auto;
+		@include min(768){
+			// min-height: 480px;
+		}
+	}
+	&.-f-slider{// スライダー
+		position: relative;
+		.c-contentsBox{
+			position: absolute;
+			// ファーストビュー×スライダー関係
+			&.-f-title{
+				top: 27%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 80%;
+				filter: drop-shadow(.5px .5px 0px #ffffff6c);
+				@include min(768){// tb
+					top: 50%;
+					left: 80%;
+					width: 33%;
+				}
+				@include min(1400){
+					top: 50%;
+					left: 70%;
+					width: 30%;
+				}
+			}
+			&.-f-des{
+				bottom: 1px;
+				left: 90%;
+				transform: translateX(-50%);
+				white-space: nowrap;
+				// width: auto;
+				@include min(768){
+					left: 60%;
+					transform: scale(.8);
+				}
+				&.-w{
+					@include min(768){
+						left: 53%;
+					}
+					@include min(1400){
+						left: 72%;
+					}
+				}
+			}
+			&.-f-bird{
+				&_01{// 青
+					top: 20%;
+					left: 15%;
+					width: 5%;
+					@include min(768){// tb
+						top: 10%;
+						left: 2%;
+						width: 4%;
+					}
+					@include min(1400){// pc
+						top: 10%;
+						left: 15%;
+						width: 3%;
+					}
+				}
+				&_02{// うすい
+					top: 20%;
+					left: 23%;
+					width: 3%;
+					@include min(768){// tb
+						top: 7%;
+						left: 7%;
+						width: 3%;
+					}
+					@include min(1400){// pc
+						left: 18%;
+						width: 2%;
+					}
+				}
+				&_03{// 黄色
+					top: 35%;
+					left: 77%;
+					width: 5%;
+					@include min(768){// tb
+						top: 23.5%;
+						left: 91%;
+						width: 2%;
+					}
+					@include min(1400){// pc
+						top: 13.5%;
+						left: 78%;
+						width: 1.8%;
+					}
+				}
+				&_04{// 緑
+					@include min(768){// tb
+						top: 57%;
+						left: 65%;
+						width: 1.5%;
+					}
+					@include min(1400){// pc
+						top: 60%;
+						left: 56%;
+						width: 1%;
+					}
+				}
+			}
+			&.-f-border{
+				top: 36%;
+				left: 25%;
+				width: 50%;
+				@include min(768){// tb
+					top: 25%;
+					left: 67%;
+					width: 24%;
+				}
+				@include min(1400){// pc
+					top: 17%;
+					left: 60%;
+					width: 18%;
+				}
+			}
+		}
+	}
+	&.-f-view{//ファーストビュー
+		position: relative;
+		overflow: hidden;
+		.imgBox{
+		}
+		.c-contentsBox{
+			position: absolute;
+			&.-bg{
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: -1;
+			}
+			&.-title{
+				&_en{
+					top: 15%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 75%;
+					@include min(768){
+						top: 35%;
+						width: 33.3333%;
+					}
+				}
+				&_ja{
+					top: 30%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 90%;
+					@include min(768){
+						top: 52%;
+						width: 50%;
+					}
+				}
+			}
+			&.-f{
+				&-icon01{
+					top: 75%;
+					left: 30%;
+					transform: translate(-50%, -50%);
+					width: 15%;
+					z-index: 2;
+					@include min(768){
+						left: 9%;
+						width: 12.5%;
+					}
+				}
+				&-icon02{
+					top: 85%;
+					left: 12%;
+					transform: translate(-50%, -50%);
+					width: 20%;
+					z-index: 2;
+					@include min(768){
+						top: 85%;
+						left: 25%;
+						width: 15.5%;
+					}
+				}
+				&-icon03{
+					top: 70%;
+					left: 85%;
+					transform: translate(-50%, -50%);
+					width: 25%;
+					z-index: 2;
+					@include min(768){
+						top: 63%;
+						width: 14%;
+					}
+				}
+				&-icon04{
+					top: 79%;
+					left: 67%;
+					transform: translate(-50%, -50%);
+					width: 15%;
+					z-index: 2;
+					@include min(768){
+						top: 78%;
+						left: 75%;
+						width: 8.5%;
+					}
+				}
+			}
+		}
+	}
+
+
+	&.-imgBg{//背景画像
+		position: relative;
+		&.-green{
+			margin-top: -11.1%;
+			z-index: 1;
+			@include min(768){
+				margin-top: -7.1%;
+			}
+		}
+		.c-contentsBox{
+			position: absolute;
+			// 共有
+			&.-center{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+			}
+			&.-bg{
+				z-index: -1;
+			}
+
+			// 都市機能×子育て環境×利便性
+			&.-greenContent{
+				@include min(768){
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 45%;
+					max-width: 1100px;
+					margin: auto;
+				}
+				@include min(1100){
+					top: 53%;
+				}
+			}
+		}
+	}
+}
