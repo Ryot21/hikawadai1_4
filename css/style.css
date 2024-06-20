@@ -4458,6 +4458,38 @@ button.swiper-pagination-bullet {
     left: 20%;
   }
 }
+.c-contents.-imgBg .c-contentsBox.-pf-btn {
+  top: 82%;
+  left: 50%;
+  width: 70%;
+}
+@media (768px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-pf-btn {
+    transform: translate(-50%, -50%);
+  }
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-pf-btn {
+    top: 75%;
+    left: 0;
+    width: 15%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-pf-btn a {
+  display: block;
+}
+.c-contents.-imgBg .c-contentsBox.-swiperContent01 {
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperContent01 {
+    top: 50%;
+    width: 50%;
+  }
+}
 
 .c-contents_title {
   position: relative;
@@ -5910,7 +5942,6 @@ a {
 }
 .swiper .swiper-wrapper .swiper-slide {
   text-align: end;
-  opacity: 0.5;
   overflow: hidden;
   transition: 0.5s all;
 }
@@ -6066,11 +6097,6 @@ a {
     background: #3b3b3b;
   }
 }
-.swiper .swiper-button-prev::after,
-.swiper .swiper-button-next::after {
-  color: white !important;
-  filter: drop-shadow(1px 1px 3px black);
-}
 .swiper .swiper-pagination.-type01 .swiper-pagination-bullet {
   box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.692);
   transition: all 1s;
@@ -6079,6 +6105,57 @@ a {
   width: 20px;
   border-radius: 5px;
   background: #5a8190;
+}
+
+.swiper-3d .swiper-slide-shadow {
+  background: none;
+}
+
+.swiper-cards {
+  /* 前への矢印カスタマイズ */
+  /* 次への矢印カスタマイズ */
+}
+.swiper-cards .swiper-button-prev,
+.swiper-cards .swiper-button-next {
+  top: auto;
+  bottom: -25%;
+  height: 50px;
+  width: 50px;
+}
+@media (width >= 768px) {
+  .swiper-cards .swiper-button-prev,
+  .swiper-cards .swiper-button-next {
+    bottom: -20%;
+  }
+}
+.swiper-cards .swiper-button-prev::after,
+.swiper-cards .swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 50px;
+  margin: auto;
+  width: 50px;
+}
+.swiper-cards .swiper-button-prev {
+  left: 25%;
+}
+.swiper-cards .swiper-button-prev::after {
+  background-image: url(../images/SVG/left.svg);
+}
+.swiper-cards .swiper-button-next {
+  right: 25%;
+}
+.swiper-cards .swiper-button-next::after {
+  background-image: url(../images/SVG/right.svg);
+}
+@media (width >= 768px) {
+  .swiper-cards.swiper-content .swiper-button-prev {
+    left: 35%;
+  }
+  .swiper-cards.swiper-content .swiper-button-next {
+    right: 35%;
+  }
 }
 
 #popup,

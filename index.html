@@ -242,7 +242,47 @@
             </div>
         </div>
 
+        <!-- パンフレット -->
+        <div class="pdt5 pdb5 pdt5s pdb5s mgb10 mgb10s" style="background: #677f0d;">
+            <div class="c-contents -imgBg w1100 ">
+                <div class="imgBox">
+                    <img class="sp"    src="images/item/pf_bg_s.png" alt="住協のこと、家づくりのことがわかる！">
+                    <img class="tb-pc" src="images/item/pf_bg.png"   alt="住協のこと、家づくりのことがわかる！">
+                </div>
+                <div class="c-contentsBox -pf-btn">
+                    <a href="https://www.jyu-g.co.jp/contents/kantan"><img src="images/item/pf_btn.png" alt="お問い合せはこちら"></a>
+                </div>
+            </div>
 
+        </div>
+
+        <!-- ZEH水準（PCのみ） -->
+        <div class="tb-pc c-contents mgb10 mgb10s">
+            <div class="w1100"><img src="images/item/point_bg.png" alt="ZEH水準の省エネ住宅が標準仕様。3つの省エネポイント。"></div>
+        </div>
+
+        <!-- 施工例 > slider -->
+        <div class="w1100 mgb10 mgb10s">
+            <div class="c-contents -imgBg">
+                <div class="imgBox">
+                    <img class="sp"    src="images/item/slider_bg_s.png" alt="施工例">
+                    <img class="tb-pc" src="images/item/slider_bg.png"   alt="施工例">
+                </div>
+                <div class="c-contentsBox -swiperContent01">
+                    <div class="swiper swiper-cards swiper-cards01 swiper-content">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img loading="lazy" src="images/slider/top-slide01.png" alt=""></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/slider/top-slide02.png" alt=""></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/slider/top-slide03.png" alt=""></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/slider/top-slide04.png" alt=""></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </main>
     <!-- //コンテンツ -->
 
@@ -329,22 +369,17 @@
     <!-- //固定アイテム -->
 
     <script>
-        // トップページ > fristView
-        const FviewSwiper = new Swiper(".swiper-Fview", {
-            effect: 'fade',
-            fadeEffect: {crossFade: true,},
-            // loop: true,
-            speed: 3000,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-                waitForTransition: true,
-            },
+        // トップページ > カードレイアウト
+        const SwiperCards01 = new Swiper(".swiper-cards01", {
+            effect: "cards",
+            autoplay: true,
+            speed: 1500,
             grabCursor: true,
-            followFinger: false,
-            pagination: {
-                el: '.swiper-Fview .swiper-pagination',
-                clickable: true,
+            mousewheelControl: true,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
         });
     </script>

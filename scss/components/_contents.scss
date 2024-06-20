@@ -356,6 +356,34 @@
 					left: 20%;
 				}
 			}
+
+			// パンフレット > お問い合わせ
+			&.-pf-btn{
+				top: 82%;
+				left: 50%;
+				width: 70%;
+				@include max(768){
+					transform: translate(-50%, -50%);
+				}
+				@include min(768){
+					top: 75%;
+					left: 0;
+					width: 15%;
+				}
+				a{display: block;}
+			}
+
+			// 施工例 > slider
+			&.-swiperContent01{
+				top: 45%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 85%;
+				@include min(768){
+					top: 50%;
+					width: 50%;
+				}
+			}
 		}
 	}
 }
